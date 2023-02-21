@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 
-    var SpeedUp = document.createElement("div");
+    var SpeedUp = document.createElement("button");
     SpeedUp.className = "SpeedUp";
     SpeedUp.textContent = "x10";
     SpeedUp.style.position = "fixed";
@@ -30,7 +30,7 @@
         }
     })
 
-    var Restore = document.createElement("div");
+    var Restore = document.createElement("button");
     Restore.className = "Restore";
     Restore.textContent = "x1";
     Restore.style.position = "fixed";
