@@ -38,7 +38,7 @@
     Restore.style.top = "200px";
     Restore.style.right = "30px";
 
-    var speedBtn = Restore.lastChild;
+    var reBtn = Restore.lastChild;
 
     speedBtn.addEventListener("click",function(){
         var v = document.getElementsByTagName('video');
