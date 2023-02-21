@@ -13,41 +13,35 @@
 (function() {
     'use strict';
 
-    var SpeedUp = document.createElement("button");
-    SpeedUp.className = "SpeedUp";
-    SpeedUp.textContent = "x10";
-    SpeedUp.style.position = "fixed";
-    SpeedUp.style.zIndex = 10000;
-    SpeedUp.style.top = "150px";
-    SpeedUp.style.right = "30px";
+    let UpBtnArea = document.createElement("div");
+    UpBtnArea.style.position = "fixed";
+    UpBtnArea.style.zIndex = 10000;
+    UpBtnArea.style.top = "150px";
+    UpBtnArea.style.right = "30px";
+    let UpBtn = document.createElement("button");
 
-    //var speedBtn = SpeedUp.lastChild;
-
-    SpeedBtn.addEventListener("click",function(){
-        var v = document.getElementsByTagName('video');
+    UpBtn.textContent = "x10";
+    UpBtn.addEventListener("click",()=>{
+        var v = document.getElementsByTagName("video");
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 10;
         }
-    })
+    });
+    UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);
 
-    var Restore = document.createElement("button");
-    Restore.className = "Restore";
-    Restore.textContent = "x1";
-    Restore.style.position = "fixed";
-    Restore.style.zIndex = 10000;
-    Restore.style.top = "200px";
-    Restore.style.right = "30px";
+    let ReBtnArea = document.createElement("div");
+    ReBtnArea.style.position = "fixed";
+    ReBtnArea.style.zIndex = 10000;
+    ReBtnArea.style.top = "200px";
+    ReBtnArea.style.right = "30px";
+    let ReBtn = document.createElement("button");
 
-    //var reBtn = Restore.lastChild;
-
-    Restore.addEventListener("click",function(){
-        var v = document.getElementsByTagName('video');
+    ReBtn.textContent = "x1";
+    ReBtn.addEventListener("click",()=>{
+        var v = document.getElementsByTagName("video");
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 1;
         }
-    })
-
-    //添加按钮
-    document.getElementsByTagName("body")[0].appendChild(SpeedUp);
-    document.getElementsByTagName("body")[0].appendChild(Restore);
+    });
+    UpBtnArea.insertBefore(ReBtn,ReBtnArea.children[0]);
 })();
