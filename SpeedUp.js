@@ -40,7 +40,7 @@
 
     var reBtn = Restore.lastChild;
 
-    speedBtn.addEventListener("click",function(){
+    reBtn.addEventListener("click",function(){
         var v = document.getElementsByTagName('video');
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 1;
