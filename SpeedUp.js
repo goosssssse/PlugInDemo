@@ -23,10 +23,12 @@
     UpBtn.textContent = "x10";
     UpBtn.addEventListener("click",()=>{
         var v = document.getElementsByTagName("video");
-        for(var i=0; i<v.length; i++){
-            v[i].playbackRate = 10;
-        }
+        // for(var i=0; i<v.length; i++){
+        //     v[i].playbackRate = 10;
+        // }
+        v[0].playbackRate = 10;
     });
+
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);
 
