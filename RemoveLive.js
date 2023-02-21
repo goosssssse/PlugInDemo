@@ -11,7 +11,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(() => {
     'use strict';
 
     //去除播放器开关
