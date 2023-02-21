@@ -13,11 +13,7 @@
 (function() {
     'use strict';
 
-    let UpBtnArea = document.createElement("div");
-    UpBtnArea.style.position = "fixed";
-    UpBtnArea.style.zIndex = 10000;
-    UpBtnArea.style.top = "150px";
-    UpBtnArea.style.right = "30px";
+    let UpBtnArea = document.querySelector("video-data");
     let UpBtn = document.createElement("button");
 
     UpBtn.textContent = "x10";
@@ -29,11 +25,7 @@
     });
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);
 
-    let ReBtnArea = document.createElement("div");
-    ReBtnArea.style.position = "fixed";
-    ReBtnArea.style.zIndex = 10000;
-    ReBtnArea.style.top = "200px";
-    ReBtnArea.style.right = "30px";
+    let ReBtnArea = document.querySelector("video-data");
     let ReBtn = document.createElement("button");
 
     ReBtn.textContent = "x1";
