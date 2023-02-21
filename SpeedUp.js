@@ -23,10 +23,9 @@
     UpBtn.textContent = "x10";
     UpBtn.addEventListener("click",()=>{
         var v = document.getElementsByTagName("video");
-        // for(var i=0; i<v.length; i++){
-        //     v[i].playbackRate = 10;
-        // }
-        v[0].playbackRate = 10;
+        for(var i=0; i<v.length; i++){
+            v[i].playbackRate = 10;
+        }
     });
 
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);
@@ -48,4 +47,21 @@
     });
     document.getElementsByTagName("body")[0].appendChild(ReBtnArea);
     ReBtnArea.insertBefore(ReBtn,ReBtnArea.children[0]);
+
+    var slowBtnArea = document.createElement("div");
+    slowBtnArea.style.position = "fixed";
+    slowBtnArea.style.zIndex = 10000;
+    slowBtnArea.style.top = "250px";
+    slowBtnArea.style.right = "30px";
+    let slowBtn = document.createElement("button");
+
+    slowBtn.textContent = "x0.5";
+    slowBtn.addEventListener("click",()=>{
+        var v = document.getElementsByTagName("video");
+        for(var i=0; i<v.length; i++){
+            v[i].playbackRate = 0.5;
+        }
+    });
+    document.getElementsByTagName("body")[0].appendChild(slowBtnArea);
+    slowBtnArea.insertBefore(slowBtn,slowBtnArea.children[0]);
 })();
