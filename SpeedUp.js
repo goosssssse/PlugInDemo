@@ -21,7 +21,7 @@
     let UpBtn = document.createElement("button");
 
     UpBtn.textContent = "x10";
-    UpBtn.addEventListener("click",()=>{
+    UpBtn.addEventListener("click",function(){
         var v = document.getElementsByTagName("video");
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 10;
@@ -39,7 +39,7 @@
     let ReBtn = document.createElement("button");
 
     ReBtn.textContent = "x1";
-    ReBtn.addEventListener("click",()=>{
+    ReBtn.addEventListener("click",function(){
         var v = document.getElementsByTagName("video");
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 1;
@@ -56,7 +56,7 @@
     let slowBtn = document.createElement("button");
 
     slowBtn.textContent = "x0.5";
-    slowBtn.addEventListener("click",()=>{
+    slowBtn.addEventListener("click",function() {
         var v = document.getElementsByTagName("video");
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 0.5;
