@@ -12,6 +12,9 @@
 
 (function() {
     'use strict';
+    let isUp = localStorage.getItem("isUp") === "false";//加速
+    let inNo = localStorage.getItem("isNo") === "false";
+    let inSl = localStorage.getItem("isSL") === "false";
 
     var UpBtnArea = document.createElement("div");
     UpBtnArea.style.position = "fixed";
@@ -22,9 +25,13 @@
 
     UpBtn.textContent = "x10";
     UpBtn.addEventListener("click",function(){
-        var v = document.getElementsByTagName("video");
-        for(var i=0; i<v.length; i++){
-            v[i].playbackRate = 10;
+        isUp = !isUp;
+        localStorage.setItem("isUp",isUp);
+        if(isUp){
+            var v = document.getElementsByTagName("video");
+            for(var i=0; i<v.length; i++){
+                v[i].playbackRate = 10;
+            }
         }
     });
 
