@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 
-    let UpBtnArea = document.createElement("div");
+    var UpBtnArea = document.createElement("div");
     UpBtnArea.style.position = "fixed";
     UpBtnArea.style.zIndex = 10000;
     UpBtnArea.style.top = "150px";
@@ -30,7 +30,7 @@
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);
 
-    let ReBtnArea = document.createElement("div");
+    var ReBtnArea = document.createElement("div");
     ReBtnArea.style.position = "fixed";
     ReBtnArea.style.zIndex = 10000;
     ReBtnArea.style.top = "150px";
