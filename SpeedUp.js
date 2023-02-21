@@ -29,9 +29,10 @@
         localStorage.setItem("isUp",isUp);
         if(isUp){
             var v = document.getElementsByTagName("video");
-            for(var i=0; i<v.length; i++){
-                v[i].playbackRate = 10;
-            }
+            // for(var i=0; i<v.length; i++){
+            //     v[i].playbackRate = 10;
+            // }
+            v[0].playbackRate = 10;
         }
     });
 
