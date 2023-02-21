@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 
-    let UpBtnArea = document.querySelector("video-data");
+    let UpBtnArea = document.querySelector(".video-data");
     let UpBtn = document.createElement("button");
 
     UpBtn.textContent = "x10";
@@ -25,7 +25,7 @@
     });
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);
 
-    let ReBtnArea = document.querySelector("video-data");
+    let ReBtnArea = document.querySelector(".video-data");
     let ReBtn = document.createElement("button");
 
     ReBtn.textContent = "x1";
@@ -35,5 +35,5 @@
             v[i].playbackRate = 1;
         }
     });
-    UpBtnArea.insertBefore(ReBtn,ReBtnArea.children[0]);
+    ReBtnArea.insertBefore(ReBtn,ReBtnArea.children[0]);
 })();
