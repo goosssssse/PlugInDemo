@@ -33,7 +33,7 @@
     var ReBtnArea = document.createElement("div");
     ReBtnArea.style.position = "fixed";
     ReBtnArea.style.zIndex = 10000;
-    ReBtnArea.style.top = "150px";
+    ReBtnArea.style.top = "200px";
     ReBtnArea.style.right = "30px";
     let ReBtn = document.createElement("button");
 
