@@ -21,9 +21,9 @@
     SpeedUp.style.top = "150px";
     SpeedUp.style.right = "30px";
 
-    var speedBtn = SpeedUp.lastChild;
+    //var speedBtn = SpeedUp.lastChild;
 
-    speedBtn.addEventListener("click",function(){
+    SpeedBtn.addEventListener("click",function(){
         var v = document.getElementsByTagName('video');
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 10;
@@ -38,9 +38,9 @@
     Restore.style.top = "200px";
     Restore.style.right = "30px";
 
-    var reBtn = Restore.lastChild;
+    //var reBtn = Restore.lastChild;
 
-    reBtn.addEventListener("click",function(){
+    Restore.addEventListener("click",function(){
         var v = document.getElementsByTagName('video');
         for(var i=0; i<v.length; i++){
             v[i].playbackRate = 1;
