@@ -13,7 +13,11 @@
 (function() {
     'use strict';
 
-    let UpBtnArea = document.querySelector(".video-data");
+    let UpBtnArea = document.createElement("div");
+    UpBtnArea.style.position = "fixed";
+    UpBtnArea.style.zIndex = 10000;
+    UpBtnArea.style.top = "150px";
+    UpBtnArea.style.right = "30px";
     let UpBtn = document.createElement("button");
 
     UpBtn.textContent = "x10";
@@ -23,9 +27,14 @@
             v[i].playbackRate = 10;
         }
     });
+    document.getElementsByTagName("body")[0].appendChild(UpBtnArea);
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);
 
-    let ReBtnArea = document.querySelector(".video-data");
+    let ReBtnArea = document.createElement("div");
+    ReBtnArea.style.position = "fixed";
+    ReBtnArea.style.zIndex = 10000;
+    ReBtnArea.style.top = "150px";
+    ReBtnArea.style.right = "30px";
     let ReBtn = document.createElement("button");
 
     ReBtn.textContent = "x1";
@@ -35,5 +44,6 @@
             v[i].playbackRate = 1;
         }
     });
+    document.getElementsByTagName("body")[0].appendChild(ReBtnArea);
     ReBtnArea.insertBefore(ReBtn,ReBtnArea.children[0]);
 })();
