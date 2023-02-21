@@ -4,8 +4,7 @@
 // @version      0.1
 // @description  关闭bilibili直播间播放器
 // @author       Goose
-// @match        https://www.tampermonkey.net/index.php
-// @include      https://live.bilibili.com/*
+// @match        https://live.bilibili.com/*
 // @license      AGPL-3.0
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
 // @grant        none
