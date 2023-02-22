@@ -4,8 +4,7 @@
 // @version      0.1
 // @description  加速bilibili视频
 // @author       Goose
-// @match        http*://*bilibili.com/video/*
-// @include      http*://*bilibili.com/video/*
+// @match        https://www.bilibili.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
 // @license      AGPL-3.0
 // @grant        none
