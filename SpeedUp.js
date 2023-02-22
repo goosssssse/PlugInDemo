@@ -31,7 +31,7 @@
         var video = document.getElementsByTagName("video")[0];
         if(video){
           video.playbackRate = 10;
-          window.clearInterval(UpBtn);
+          window.clearInterval(up);
         }
       },5000);
     }
