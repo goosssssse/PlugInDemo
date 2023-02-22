@@ -20,7 +20,7 @@
     UpBtnArea.style.top = "150px";
     UpBtnArea.style.right = "30px";
     var UpBtn = document.createElement("button");//按钮
-    UpBtn.textContent = "x10";
+    UpBtn.textContent = "x15";
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);//位置插入
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);//按钮插入
     
@@ -30,9 +30,9 @@
       var up = window.setInterval(function(){
         var video = document.getElementsByTagName("video")[0];
         if(video){
-          video.playbackRate = 10;
+          video.playbackRate = 15;
           window.clearInterval(up);
         }
-      },5000);
+      },1000);
     }
 })();
