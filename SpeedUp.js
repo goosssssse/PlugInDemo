@@ -31,9 +31,7 @@
       isUp = !isUp;
       localStorage.setItem("isUp",isUp);
       while(isUp){
-        setTimeout(()=>{
-          document.getElementsByTagName("video")[0].playbackRate = 5;
-        },1000);
+        document.getElementsByTagName("video")[0].playbackRate = 5;
       }
     }
 })();
