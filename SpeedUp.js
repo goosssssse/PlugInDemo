@@ -12,6 +12,14 @@
 
 (function() {
     'use strict';
+
+    var tmm = window.setInterval(function(){
+      var video = document.getElementsByTagName("video")[0];
+      if(video){
+        video.playbackRate = 15;
+        window.clearInterval(tmm);
+      }
+    }, 5000);
     
     // //视频加速按钮
     // var UpBtnArea = document.createElement("div");//按钮位置
@@ -35,12 +43,4 @@
     //     }
     //   },1000);
     // }
-
-    var tmm = window.setInterval(function(){
-      var video = document.getElementsByTagName("video")[0];
-      if(video){
-        video.playbackRate = 15;
-        window.clearInterval(tmm);
-      }
-    }, 5000);
 })();
