@@ -42,5 +42,5 @@
         video.playbackRate = 15;
         window.clearInterval(tmm);
       }
-    }, 2000);
+    }, 5000);
 })();
