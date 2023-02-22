@@ -23,4 +23,7 @@
     UpBtn.textContent = "x10";
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);//位置插入
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);//按钮插入
+    UpBtn.addEventListener("click",()=>{
+      document.querySelector("video").playbackRate = 10;
+    })
 })();
