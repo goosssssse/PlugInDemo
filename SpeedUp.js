@@ -24,10 +24,10 @@
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);//位置插入
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);//按钮插入
     
-    UpBtn.addEventListener("click",speedUp);
-
-    //let isUp = localStorage.getItem("isUp") === "false";
-    function speedUp(){
-      document.getElementsByTagName("video")[0].playbackRate=5;
-    }
+    UpBtn.addEventListener("click",function(){
+      var v=document.getElementsByTagName('video');
+      for(var i=0; i<v.length; i++){
+        v[i].playbackRate = 1;
+      }
+    })
 })();
