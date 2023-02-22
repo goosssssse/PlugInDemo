@@ -30,7 +30,7 @@
     function speedUp(){
       isUp = !isUp;
       localStorage.setItem("isUp",isUp);
-      while(isUp){
+      if(isUp){
         document.getElementsByTagName("video")[0].playbackRate = 5;
       }
     }
