@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  视频加速
 // @author       Goose
-// @match        *://*
+// @match        https://*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
 // @license      AGPL-3.0
 // @grant        none
