@@ -30,10 +30,11 @@
     function speedUp(){
       isUp = !isUp;
       localStorage.setItem("isUp",isUp);
-      while(isUp){
-        setTimeout(()=>{
-          document.getElementsByTagName("video")[0].playbackRate=5;
-        },2000);
+      if(isUp){
+        //document.getElementsByTagName("video")[0].playbackRate=5;
+        document.getElementsByTagName("video")[0].remove();
+      }else{
+        location.reload();
       }
     }
 })();
