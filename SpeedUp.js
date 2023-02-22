@@ -23,7 +23,16 @@
     UpBtn.textContent = "x10";
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);//位置插入
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);//按钮插入
-    UpBtnArea.addEventListener("click",()=>{
-      document.querySelector("video").playbackRate = 10;
-    })
+    
+    // UpBtn.addEventListener("click",()=>{
+    //   document.querySelector("video").playbackRate = 10;
+    // })
+
+    UpBtn = window.setInterval(function(){
+      var video = document.getElementsByTagName("video")[0];
+      if(video){
+        video.playbackRate = 10;
+        window.clearInterval(UpBtn);
+      }
+    },1000);
 })();
