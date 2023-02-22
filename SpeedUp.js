@@ -20,7 +20,7 @@
     UpBtnArea.style.top = "150px";
     UpBtnArea.style.right = "30px";
     var UpBtn = document.createElement("button");//按钮
-    UpBtn.textContent = "x15";
+    UpBtn.textContent = "x5";
     document.getElementsByTagName("body")[0].appendChild(UpBtnArea);//位置插入
     UpBtnArea.insertBefore(UpBtn,UpBtnArea.children[0]);//按钮插入
     
@@ -31,7 +31,7 @@
       isUp = !isUp;
       localStorage.setItem("isUp",isUp);
       while(isUp){
-        document.getElementsByTagName("video")[0].playbackRate = 10;
+        document.getElementsByTagName("video")[0].playbackRate = 5;
       }
     }
 })();
