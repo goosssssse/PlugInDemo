@@ -26,15 +26,18 @@
     
     UpBtn.addEventListener("click",speedUp);
 
-    let isUp = localStorage.getItem("isUp") === "false";
+    //let isUp = localStorage.getItem("isUp") === "false";
     function speedUp(){
-      isUp = !isUp;
-      localStorage.setItem("isUp",isUp);
-      if(isUp){
-        //document.getElementsByTagName("video")[0].playbackRate=5;
-        document.getElementsByTagName("video")[0].remove();
-      }else{
-        location.reload();
+      //isUp = !isUp;
+      //localStorage.setItem("isUp",isUp);
+      // if(isUp){
+      //   //document.getElementsByTagName("video")[0].playbackRate=5;
+      //   document.getElementsByTagName("video")[0].remove();
+      // }
+      for(var i=0; i<1000000; i++){
+        setInterval(()=>{
+          document.getElementsByTagName("video")[0].playbackRate=5;
+        },2000);
       }
     }
 })();
